@@ -5,7 +5,7 @@
 
 int my_main(){
     // your code goes here
-    // always put '\n' on the last printf()
+    // always put '\n' on the last executed printf()
 
     return 0;
 }
@@ -51,8 +51,8 @@ int main()
 {
     FILE *newin, *newout;
     // redirecting the stdin(keyboard) and stdout(screen/console) to different files
-    newin = reopen_file("input.txt", "r", stdin, "Error redirecting the input stream to file!");
-    newout = reopen_file("output.txt", "w", stdout, "Error redirecting the output stream to file!");
+    newin = reopen_file("input.txt", "r", stdin, "Error redirecting the std input stream to file!");
+    newout = reopen_file("output.txt", "w", stdout, "Error redirecting the std output stream to file!");
 
     int num_of_tests;
     scanf("%d", &num_of_tests);
